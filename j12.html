@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <script>
+            function getres()
+            {
+                var p=parseInt(document.getElementById("p").value);
+                var c=parseInt(document.getElementById("c").value);
+                var m=parseInt(document.getElementById("m").value);
+                var t=p+c+m;
+                var per=t/3;
+                var res="";
+                if (p>=33)
+                res="pass";
+                else
+                res="fail";
+                document.getElementById("t").value=t;
+                document.getElementById("per").value=per;
+                document.getElementById("res").value=res;
+
+            }
+            </script>
+        <body>
+            <table>
+                <tr>
+                    <td>enter  roll no</td>
+                    <td><input type="text" id="r"></td>
+                </tr><tr>
+                    <td>enter name</td>
+                    <td><input type="text" id="n"></td>
+                </tr>
+                <tr>
+                    <td>enter phy marks</td>
+                    <td><input type="text" id="p"></td>
+                </tr>
+                <tr>
+                    <td>enter chm marks</td>
+                    <td><input type="text" id="c"></td>
+                </tr>
+                <tr>
+                    <td>enter maths marks</td>
+                    <td><input type="text" id="m"></td>
+                </tr>
+                <tr>
+                    <td>total</td>
+                    <td><input type="text" id="t"></td>
+                </tr>
+                <tr>
+                    <td>Per</td>
+                    <td><input type="text" id="per"></td>
+                </tr>
+                <tr>
+                    <td>res</td>
+                    <td><input type="text" id="res"></td>
+                </tr>
+                <tr>
+                <td><input type="button" value="result" onclick="getres()"></td>
+            </tr>
+            </table>
+        </body>
+    </head>
+</html>
